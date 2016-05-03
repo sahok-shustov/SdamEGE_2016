@@ -1,0 +1,24 @@
+<ion-modal-view class="purchaseModal-background">
+
+    <!-- <ion-header-bar>
+        <h1 class="title">Modal View</h1>
+    </ion-header-bar> -->
+    <!--  <ion-nav-bar  align-title="center">
+        <ion-nav-back-button class="button-icon ion-arrow-left-c">
+        </ion-nav-back-button>
+    </ion-nav-bar> -->
+    <ion-content>
+    <div class="purchaseModalPicture">
+    	<img ng-src="img/purchaseModalPicture.png">
+    <button class="button button-small button-clear icon ion-close" ng-click="closePurchaseModalWindow()"></button>
+
+    </div>
+    <div class="purchaseModal">
+    	<h4><p>Открой полный доступ ко всем предметам</p></h4>
+        <p>Тысячи полезных материалов для ЕГЭ 2016</p>
+        <button class="button button-balanced" ng-click="buyContent()">Купить за 299,00 ₽</button>
+
+        <button class="button button-clear button-positive" ng-click="reestablishPurchase()">Восстановить покупку</button>
+    </div>
+    </ion-content>
+</ion-modal-view>

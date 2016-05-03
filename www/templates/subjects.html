@@ -1,0 +1,35 @@
+<ion-view view-title="Теория по ЕГЭ" cache-view="true">
+    <ion-nav-buttons side="right">
+        <i class="button button-icon button-clear main-button-key" ng-click="openPurchaseModalWindow()" ng-show="paid == false"><img src="img/kluch.png"></i>
+    </ion-nav-buttons>
+    <!-- <div class="bar title title-right">
+  <button class="button button-icon icon ion-navicon"></button>
+  <div class="h1 title">Header Buttons</div>
+  <button class="button button-clear button-positive">Edit</button>
+</div> -->
+    <ion-content class="main-body-background padding">
+        <!-- <button class="button" ng-click="addToLocalStorage()">addToLocalStorage</button>
+        <button class="button" ng-click="delToLocalStorage()">delToLocalStorage</button> -->
+        <!-- <button class="button" ng-click="reestablishPurchase()">reestablishPurchase</button>
+        <button class="button" ng-click="openPurchaseSuccessWindow()">openPurchaseSuccessWindow</button>
+        <p>resultInit : {{resultInit}} </p>
+        <p>productId : {{productId}} </p>
+        <p>availableProdResult : {{availableProdResult}} </p> -->
+        <div class="main-subject" ng-repeat="subject in subjects" style="background-color: {{subject.color}}; border-bottom-color: {{subject.colorBorder}};" ng-click="goToTopics(subject)" ng-class="{'empty': subject.in_development === true}">
+            <img class="main-image" ng-src="{{ subject.cat_image }}">
+            <div class="main-subjectWraper">
+                <img src="img/zamok2.png" ng-show="subject.premium == true  && paid == false">
+            </div>
+            <div class="main-name-subject">{{subject.cat_name}}</div>
+            <!-- {{subject.cat_name}} -->
+        </div>
+        <div class="main-subject" ng-repeat="subject in subjectsEmpty | orderBy: 'cat_name'" style="background-color: {{subject.color}}; border-bottom-color: {{subject.color}}" ng-click="goToTopics(subject)" ng-class="{'empty': subject.in_development === true}">
+            <img class="main-image" ng-src="{{ subject.cat_image }}">
+            <div class="main-subjectWraper">
+                <img src="img/zamok2.png" ng-show="subject.premium == true  && paid == false">
+            </div>
+            <div class="main-name-subject">{{subject.cat_name}}<br><span ng-show="subject.in_development === true">(Скоро)</span></div>
+            <!-- {{subject.cat_name}} -->
+        </div>
+    </ion-content>
+</ion-view>

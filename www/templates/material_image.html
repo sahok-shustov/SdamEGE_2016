@@ -1,0 +1,20 @@
+<ion-view view-title="" cache-view="true">
+    <ion-content>
+            <div class="row">
+                <div class="col">
+                    <h4>{{material.title}}</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center description-only-image">
+                    <img ng-src="{{material.material_image}}" ng-click="showImages({{indexPosition}})" class="image-list-thumb" />
+                </div>
+            </div>
+        <!-- <ion-gallery ion-gallery-items="items" ion-gallery-row="1">
+            <img ng-src="{{material.material_image}}" />
+        </ion-gallery> -->
+        
+        <!-- <ion-gallery ion-gallery-items="items" ion-gallery-toggle="true"></ion-gallery>
+        <ion-gallery ion-gallery-items="items" ion-item-callback="callback(item)"></ion-gallery> -->
+    </ion-content>
+</ion-view>

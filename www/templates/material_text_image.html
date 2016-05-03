@@ -1,0 +1,24 @@
+<ion-view view-title="">
+    <ion-content>
+        <div class="row">
+            <div class="col" class="materials-margin-left">
+                <h4>{{material.title}}</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <img ng-src="{{material.material_image}}" ng-click="showImages({{indexPosition}})" class="image-list-thumb"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" class="materials-margin-left">
+                <p ng-bind-html="material.material_text"></p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+<!-- <ion-view view-title="" cache-view="true">
+    <ion-content class="padding">
+        <iframe ng-src="{{trustSrc(link.src)}}" height="100%" width="100%"></iframe>
+    </ion-content>
+</ion-view> -->

@@ -1,0 +1,309 @@
+/*fonts*/
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body,
+button{
+	font-family: roboto;
+	font-size: 14px;
+}
+/*fonts*/
+.bar.bar-stable .title{
+	font-size: 16px;
+	color: #fff;
+	font-family: roboto;
+}
+/*.bar.bar-stable:first-child .title{
+	left: 113px;
+}*/
+a{
+	text-decoration: none;
+}
+
+.bar.bar-stable {
+    background-color: #44a3ca;
+}
+
+/*//////////////////////////////     Denis START /////////////////////////////*/
+
+
+/* Materials.html and etc. */
+
+.search-bar {
+    background-color: #f5f4f1 !important;
+}
+
+.materials-label {
+    background-color: #fff;
+}
+
+.materials-search-icon {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 16px;
+    margin-left: -44px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.search-input {
+    border-radius: 5px;
+}
+
+.materials-background {
+    background-color: #f5f4f1;
+}
+
+.materials-margin-left {
+    margin-left: 5px;
+}
+
+.button.button-icon.input-button {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    color: #bbb;
+}
+.bar.bar-stable,
+.bar-header {
+    background-color: #36B5EF;
+}
+
+.modal-slider {
+    color: #fff;
+    left: 71px !important;
+}
+
+.bar-stable .button.button-icon {
+    color: #fff;
+}
+
+/*.title.title-left.header-item {
+    text-align: center;
+    left: 113px;
+}*/
+
+.bar .button-bar > .button,
+.bar .buttons > .button {
+    color: #fff;
+}
+
+.material_text_background {
+    background-color: #f5f4f1;
+}
+
+h4 {
+    color: #44a3ca;
+}
+
+.image-list-thumb {
+    padding: 2px 2px 2px 2px;
+    width: 90%;
+    height: 90%;
+}
+
+.image-modal {
+    width: 100% !important;
+    height: 100%;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.transparent {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 565px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center, center;
+}
+
+.slider-left {
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 62%;
+}
+
+.slider-right {
+    position: absolute;
+    right: 0;
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 31%;
+}
+
+.footer {
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+i {
+    line-height: 0;
+}
+
+
+/*////////////////////////////// Denis END ///////////////////////*/
+
+
+/*===== start main html =====*/
+.main-body-background{
+	background-color: #023b47;
+	text-align: center;
+}
+.main-subject{
+	position: relative;
+	display: inline-block;
+	width: 30.5%;
+	height: 25%;
+	margin: 1%;
+	text-align: center;
+	border-radius: 6px;
+	border-bottom: 5px solid; 
+	-webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.main-subject:last-child{
+	float: left;
+	margin-left: 1.5%;
+}
+.main-subject .main-image{
+	position: absolute;
+	margin: 0 auto;
+	width: 50%;
+	top: 15%;
+	left: 0;
+	right: 0;
+}
+.main-subjectWraper{
+	position: absolute; 
+	margin-top: 5px;
+	width: 100%;
+	text-align: right;
+}
+.main-subjectWraper img{
+	padding-right: 5px;
+	width: 20px;
+}
+.main-name-subject{
+	position: absolute;
+	text-align: center !important;
+	width: 100%;
+	padding: 10px 1px 10px 1px;
+	color: #fff;
+	bottom: 0px;
+}
+.main-button-key{
+	text-align: right;
+}
+.main-button-key img {
+	width: 30%;
+}
+.main-lockedSubjects{
+ float: right;
+ padding-right: 5px;
+ color: #fff;
+}
+.topics-lockedSubjects{
+ float: right;
+ padding-right: 15px;
+ color: #666;
+}
+/*===== end main html =====*/
+
+/*===== Start categories html =====*/
+.itemCategoria{
+ background-color: transparent !important; 
+ text-align: left; 
+ color: #fff; 
+ border-top: 0; 
+ border-right: 0; 
+ border-left: 0; 
+ width: 100%; 
+ border-color: #666 !important;
+ padding-left: 5px !important;
+}
+.item-complex .item-content, .item-radio .item-content{
+ background-color: transparent !important;
+ padding-right: 16px !important;
+}
+
+.item .ion-chevron-right{
+	float: right;
+	color: #1199ea;
+}
+
+.categories-list-locked{
+	margin-top: 3px;
+	float: right;
+	width: 10px;
+	margin-right: 10px; 
+}
+.spinner svg{
+	stroke: #fff;
+}
+.empty {
+	background-color: transparent !important;
+	border: 1px solid #666 !important;
+}
+/*===== end categories html =====*/
+
+/*===================== START MODAL PURCHASE WINDOW - SASHKA ===================*/
+.purchaseModalPicture {
+	text-align: center;
+}
+.purchaseModalPictureSuccess {
+	text-align: center;
+}
+.purchaseModalPicture img {
+	width: 70%;
+	margin-top : 10%;
+	margin-left: 10%;
+}
+.purchaseModalPictureSuccess img {
+	width: 30%;
+	margin-top : 45%;
+	margin-left: 10%;
+}
+.purchaseModalPicture button {
+	margin-top : 5%;
+}
+.purchaseModalPictureSuccess button {
+	float: right;
+    margin-right: 3%;
+    margin-top: 5%;
+}
+.purchaseModal  {
+	width: 65%;
+	margin : 0 auto;
+	color: white;
+	text-align: center;
+}
+.purchaseModal  button{
+	width: 100%;
+	margin-top : 10%;
+	text-align: center;
+}
+.purchaseModal h4 {
+	margin : 0 auto;
+	color: white;
+	text-align: center;
+}
+.purchaseModal-background {
+	background-color: #023b47;
+}
+
+/*===================== END MODAL PURCHASE WINDOW - SASHKA ===================*/

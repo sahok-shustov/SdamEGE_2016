@@ -1,0 +1,15 @@
+<ion-view view-title="{{ selectedSubjectName }}" cache-view="true">
+    <ion-content class="main-body-background padding">
+        <ion-refresher pulling-text="Обновление..." on-refresh="updateTopicsPage()"></ion-refresher>
+            <ion-item class="item itemCategoria" ng-repeat="category in categoriesList" ng-click="goToMaterialsORAdditionalTopics(category)">
+                {{ category.cat_name }}
+                <i class="ion-chevron-right"></i>
+                <div class="topics-lockedSubjects" ng-show="category.premium == true && paid == false">
+                    <img src="img/zamok1.png" width="15px;">
+                </div>
+                <img ng-src="{{ category.locked }}" class="categories-list-locked">
+            </ion-item>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>

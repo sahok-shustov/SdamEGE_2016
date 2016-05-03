@@ -1,0 +1,21 @@
+<ion-view view-title="{{categoryName}}">
+    <ion-header-bar class="bar-light bar-subheader search-bar">
+        <label class="item-input-wrapper" class="materials-label">
+            <i class="icon ion-ios-search placeholder-icon materials-search-icon" ng-hide="searchFocused == true"></i>
+        </label>
+        <input type="search" placeholder="Поиск" ng-model="search" ng-focus="searchFocused = true" ng-blur="searchFocused = false" class="full-width search-input text-center" aria-hidden="true">
+        <button ng-if="search.length" class="button button-icon ion-android-close input-button" ng-click="clearSearch()">
+        </button>
+    </ion-header-bar>
+    <ion-content class="materials-background">
+        <ion-refresher pulling-text="Обновление..." on-refresh="updateMaterialsView()">
+        </ion-refresher>
+        <ion-item class="responsive-sm responsive-md responsive-lg" ng-repeat="material in materialsList | orderBy:sortingTypeMaterials | filter:search" ng-click="goToMaterialTypePage($index, material)" ng-init="addNewMaterialsList(material)" style="white-space: normal; background-color: transparent !important;">
+            {{material.name_alt}}
+            <div class="topics-lockedSubjects" ng-show="paid == false && ($index > 4) && topicsPremium">
+                <img src="img/zamok1.png" width="15px;">
+            </div>
+        </ion-item>
+    </ion-content>
+</ion-view>
+<!-- | orderBy:'entry_date'  -->
